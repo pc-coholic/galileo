@@ -1,0 +1,143 @@
+Out: "Force Disconnect"
+Out: 02:02:00:c8:01:3f:00:00:00:00:00:00:00:00:00:00:00:00:00:00:00:00:00:00:00:00:00:00:00:00:00:00
+
+In: Cancel Discovery
+In: 20:01:43:61:6e:63:65:6c:44:69:73:63:6f:76:65:72:79:00:00:00:00:00:00:00:00:00:00:00:00:00:00:00
+
+In: Terminate Link
+In: 20:01:54:65:72:6d:69:6e:61:74:65:4c:69:6e:6b:00:00:00:00:00:00:00:00:00:00:00:00:00:00:00:00:00
+
+Out: Dongle Firmware Version
+Out: 02:01:00:c8:01:3f:00:00:00:00:00:00:00:00:00:00:00:00:00:00:00:00:00:00:00:00:00:00:00:00:00:00
+
+In: Dongle Firmware Version? (1.1)  + Bluetooth Dongle Address (62:94:AF:29:6A:BC)
+In: 15:08:01:01:62:94:af:29:6a:bc:74:09:00:20:00:00:ff:e7:03:00:01:00:00:00:00:00:00:00:00:00:00:00
+
+Out: 
+Out: 02:fd:00:c8:01:3f:00:00:00:00:00:00:00:00:00:00:00:00:00:00:00:00:00:00:00:00:00:00:00:00:00:00
+
+In: EP2 CTRL OUT - unknown packet
+In: 20:01:45:50:32:20:43:54:52:4c:20:4f:55:54:20:2d:20:75:6e:6b:6e:6f:77:6e:20:70:61:63:6b:65:74:00
+
+Out: Start Discovery
+Out: 1a:04:ba:56:89:a6:fa:bf:a2:bd:01:46:7d:6e:00:00:ab:ad:00:fb:01:fb:02:fb:a0:0f:00:00:00:00:00:00
+
+In: Start Discovery
+In: 20:01:53:74:61:72:74:44:69:73:63:6f:76:65:72:79:00:00:00:00:00:00:00:00:00:00:00:00:00:00:00:00
+
+In: Discovery: addr=63:39:56:50:1B:D4, addrType=1, rssI=-69, svcDataLen=2, serviceUUID=2EBD
+In: 13:03:63:39:56:50:1b:d4:01:bb:02:05:04:03:2c:31:f3:bd:2e:00:00:00:00:00:00:00:00:00:00:00:00:00
+
+In: 
+In: 03:02:01:00:00:00:00:00:00:00:00:00:00:00:00:00:00:00:00:00:00:00:00:00:00:00:00:00:00:00:00:00
+
+Out: 
+Out: 1a:04:ba:56:89:a6:fa:bf:a2:bd:01:46:7d:6e:00:00:ab:ad:00:fb:01:fb:02:fb:10:27:00:63:00:6f:00:6d
+
+In: Start Discovery
+In: 20:01:53:74:61:72:74:44:69:73:63:6f:76:65:72:79:00:00:00:00:00:00:00:00:00:00:00:00:00:00:00:00
+
+In: 
+In: 13:03:63:39:56:50:1b:d4:01:b0:02:05:04:03:2c:31:f3:bd:2e:00:00:00:00:00:00:00:00:00:00:00:00:00
+
+In: 
+In: 03:02:01:00:00:00:00:00:00:00:00:00:00:00:00:00:00:00:00:00:00:00:00:00:00:00:00:00:00:00:00:00
+
+Out: 
+Out: 02:02:00:12:00:00:00:10:00:00:00:15:00:00:00:03:00:00:00:71:00:00:00:00:00:00:00:6e:00:00:00:00
+
+In: Cancel Discovery
+In: 20:01:43:61:6e:63:65:6c:44:69:73:63:6f:76:65:72:79:00:00:00:00:00:00:00:00:00:00:00:00:00:00:00
+
+In: Terminate Link
+In: 20:01:54:65:72:6d:69:6e:61:74:65:4c:69:6e:6b:00:00:00:00:00:00:00:00:00:00:00:00:00:00:00:00:00
+
+C:\Programme\Fitbit Connect>FitbitConnectService.exe /D
+Service running in debug mode...
+Fitbit Galileo v1.0.0.2578 started (built Feb 25 2013 14:14:05 using boost 1_49)
+
+Starting tracker service...
+MegaDumpService::checkDongleConnected: Dongle is disconnected. Stopping MegaDump
+s.donglePollerThreadProcedure: starting.
+
+PipeServer::serverThreadProcedure: Server thread startedPipeServer::serverThread
+Procedure: Server thread startedPipeServer::serverThreadProcedure: Server thread
+ startedLooking for new active dongle
+
+
+
+New client connection
+Received message from client.
+Received message with dongle status type.
+ServiceStatusNotifier::sendDongleStatusToClient: Forwarding dongle status messag
+e of size 2 to client...
+Created new dongle status checker for connected client
+Looking for new active dongle
+Looking for new active dongle
+Looking for new active dongle
+Looking for new active dongle
+Looking for new active dongle
+Looking for new active dongle
+Looking for new active dongle
+Looking for new active dongle
+dataThreadProcedure: startingcontrolThreadProcedure: startingprocessorThreadProc
+edure: startingStarting tracker session timeout threadStarting tracker session p
+rogress thread
+sending force disconnect
+
+
+
+
+IN<CTRL> trace: CancelDiscovery
+IN<CTRL> trace: TerminateLink
+Timed out waiting for terminate link acknowledgement, assuming that link is term
+inated
+dongle firmware version: 1.1IN<CTRL> trace: EP2 CTRL OUT - unknown packet
+dongle bluetooth address: 62:94:AF:29:6A:BC
+
+active dongle service has changed
+MegaDumpService::dongleConnectionStatusChanged: Dongle reconnected. Resuming Meg
+aDumps.
+Starting tracker discovery
+ServiceStatusNotifier::handleDongleStatus :Dongle status changed to: connectedSt
+arting tracker discovery timeout threadIN<CTRL> trace: StartDiscovery
+
+ServiceStatusNotifier::sendDongleStatusToClient: Forwarding dongle status messag
+e of size 8 to client...
+
+discovery: addr=63:39:56:50:1B:D4, addrType=1, rssi=-69, svcDataLen=2, serviceUU
+ID=2EBD
+discovery complete: numTrackers = 1Exiting tracker discovery timeout thread.
+ServerStatusChecker::checkServerReachability: Sending status request to http://c
+lient.fitbit.com/tracker/client/message?p_lcl=en_US
+
+ServerStatusChecker::handleServerResponse: Received status code for request: 200
+
+Received response from server: <?xml version="1.0" encoding="UTF-8" standalone="
+yes"?><galileo-server version="2.0"><server-version>URL: https://src.fitbit.com/
+svn/weightsite/trunk
+Last Changed Rev: 49698
+</server-version></galileo-server>
+MegaDumpService::serverStatusReachableCallback: Server responded to request as r
+eachable at URL: http://client.fitbit.com/tracker/client/message
+MegaDumpService::startMegaDump: Will perform MegaDump for tracker 63:39:56:50:1B
+:D4
+Starting tracker discovery
+Starting tracker discovery timeout threadMegadump service syncing state changed
+
+ServiceStatusNotifier::sendSynchronizationStatusToClient: Forwarding synchroniza
+tion status message of size 2 to client...IN<CTRL> trace: StartDiscovery
+
+Tracker discovery exceeded expected duration, timing out
+sending force disconnect
+Timed out waiting for terminate link acknowledgement, assuming that link is term
+inated
+MegaDumpService::handleMegaDumpError: Error when getting MegaDump
+Megadump service syncing state changed
+ServiceStatusNotifier::sendSynchronizationStatusToClient: Forwarding synchroniza
+tion status message of size 2 to client...
+IN<CTRL> trace: CancelDiscoveryExiting tracker discovery timeout thread.
+IN<CTRL> trace: TerminateLink
+
+
+C:\Programme\Fitbit Connect>
